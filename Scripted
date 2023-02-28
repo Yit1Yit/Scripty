@@ -1,0 +1,466 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "End Hacker's Free Script Hub", HidePremium = false, SaveConfig = true, IntroText = "Free Script Hub", ConfigFolder = "OrionTest"})
+if game.PlaceId == 8305337434 then
+    
+    -- GAME: LAST TO LEAVE.
+    
+    
+    local MainTab = Window:MakeTab({
+        Name = "Main",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+
+    local TeleportTab = Window:MakeTab({
+        Name = "Teleports",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+
+
+
+
+    TeleportTab:AddButton({
+        Name = "Teleport to: Middle",
+        Callback = function()
+                  
+            
+            
+            
+            
+            
+
+
+
+
+            wait(0.3)
+            OrionLib:MakeNotification({
+                Name = "Teleported.",
+                Content = "You have been teleported to: Middle of Circle.",
+                Image = "rbxassetid://4483345998",
+                Time = 3
+            })
+        
+
+
+
+
+
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(1, 8.866969109, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait (0.1)
+pl.CFrame = location
+
+
+
+            print("Teleported to: Middle")
+          end    
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    MainTab:AddButton({
+        Name = "Execute Infinite Yield (OP!)",
+        Callback = function()
+                  
+            
+            
+            
+            
+            
+
+
+
+
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+
+
+
+
+
+
+
+
+
+            wait(1)
+            OrionLib:MakeNotification({
+                Name = "Infinite Yield Executed.",
+                Content = "Have fun!",
+                Image = "rbxassetid://4483345998",
+                Time = 3
+            })
+        
+
+
+
+
+            print("Infinite Yield executed.")
+          end    
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    TeleportTab:AddButton({
+        Name = "Teleport to: Safe Place",
+        Callback = function()
+                  
+            
+            
+            
+            
+            
+
+
+
+
+            wait(0.3)
+            OrionLib:MakeNotification({
+                Name = "Teleported.",
+                Content = "You have been teleported to: Safe Place.",
+                Image = "rbxassetid://4483345998",
+                Time = 3
+            })
+        
+
+
+
+
+
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local location = CFrame.new(1, -6.765884, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            local humanoid = game.Players.LocalPlayer.Character.Humanoid
+            humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            wait (0.1)
+            pl.CFrame = location
+
+
+
+
+
+
+
+
+            print("Teleported to: Safe Place")
+          end    
+    })
+    
+end
+
+
+    if game.PlaceId == 8888615802 then
+
+
+
+--Tabs
+        local MainTab = Window:MakeTab({
+            Name = "Main",
+            Icon = "rbxassetid://4483345998",
+            PremiumOnly = false
+        })
+
+
+        local TeleportTab = Window:MakeTab({
+            Name = "Teleports",
+            Icon = "rbxassetid://4483345998",
+            PremiumOnly = false
+        })
+
+        local ESPTab = Window:MakeTab({
+            Name = "ESP",
+            Icon = "rbxassetid://4483345998",
+            PremiumOnly = false
+        })
+
+
+        local MiscTab = Window:MakeTab({
+            Name = "Misc",
+            Icon = "rbxassetid://4483345998",
+            PremiumOnly = false
+        })
+
+
+
+
+
+
+
+
+--Buttons and other things
+
+
+
+        ESPTab:AddButton({
+            Name = "Monster ESP",
+            Callback = function()
+                      
+                
+                local itemsOfInterest = Instance.new("Model", workspace)
+                itemsOfInterest.Name = "Items of Interest"
+                
+                for i, v in pairs (workspace:GetChildren()) do
+                if v.Name == "Battery" or (v.Name:find("^Block") and v:IsA("Model")) or (v.Name:find("^Food") and v:IsA("Model")) or (v.Name:find("^Fuse") and v:IsA("Model")) then
+                v.Parent = itemsOfInterest
+                end
+                end
+                
+                for i, v in pairs (workspace.Monsters:GetChildren()) do
+                local highlight = Instance.new("Highlight")
+                highlight.Parent = v
+                highlight.Adornee = v
+                highlight.FillColor = Color3.new(255, 0, 0)
+                highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                highlight.FillTransparency = 0.5
+                end
+                
+                local highlight = Instance.new("Highlight")
+                highlight.Parent = itemsOfInterest
+                highlight.Adornee = itemsOfInterest
+                highlight.FillColor = Color3.new(0, 255, 0)
+                highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                highlight.FillTransparency = 0.5
+                
+                
+                
+                
+                
+                wait(1)
+                
+                
+                OrionLib:MakeNotification({
+                    Name = "Script Executed.",
+                    Content = "Monster ESP has been executed.",
+                    Image = "rbxassetid://4483345998",
+                    Time = 3
+                })
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                print("Monster ESP Activated.")
+              end    
+        })
+
+
+
+MiscTab:AddButton({
+	Name = "Misc Script",
+	Callback = function()
+        
+        
+        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+        
+        OrionLib:MakeNotification({
+            Name = "Tip",
+            Content = "THE GUY WHO MADE THIS IS WEIRD",
+            Image = "rbxassetid://4483345998",
+            Time = 1
+        })
+        wait(1)
+        OrionLib:MakeNotification({
+            Name = "Script Executed.",
+            Content = "Misc Script has been executed.",
+            Image = "rbxassetid://4483345998",
+            Time = 3
+        })
+        
+        
+
+
+
+        
+        
+        print("Script Executed")
+  	end    
+})
+
+
+
+
+
+TeleportTab:AddButton({
+    Name = "Teleport To: Toy Stand (Part 1)",
+    Callback = function()
+
+        
+        
+        
+        
+        
+        
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(370.999939, 49.5000038, 138.499969, 0, -1, 0, 1, 0, -0, 0, 0, 1)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait (0.1)
+pl.CFrame = location
+        
+        
+        
+        wait(0.5)
+OrionLib:MakeNotification({
+    Name = "Teleported.",
+    Content = "You have been teleported to: Toy Stand",
+    Image = "rbxassetid://4483345998",
+    Time = 4
+})
+
+        
+        
+        
+        
+        print("Teleported to the Toy Stand.")
+      end    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        MainTab:AddButton({
+            Name = "Infinite Yield (OP!)",
+            Callback = function()
+                      
+                
+                
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+                
+                
+                
+                
+                
+                wait(1)
+                
+                
+            
+                OrionLib:MakeNotification({
+                    Name = "Script Executed.",
+                    Content = "Infinite Yield has been executed.",
+                    Image = "rbxassetid://4483345998",
+                    Time = 3
+                })
+                
+                
+                
+                
+                
+                
+                
+                print("Infinite Yield Executed.")
+              end    
+        })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    OrionLib:MakeNotification({
+        Name = "Script executed.",
+        Content = "Made by End Hacker.",
+        Image = "rbxassetid://4483345998",
+        Time = 3
+    })
+
+
+
+end
