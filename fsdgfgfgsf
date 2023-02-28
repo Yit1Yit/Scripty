@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://github.com/Yit1Yit/Scripty/blob/main/efddsf))()
+loadstring(game:HttpGet("https://github.com/Yit1Yit/Scripty/blob/main/efddsf", true))()
