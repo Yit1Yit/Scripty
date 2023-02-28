@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/Yit1Yit/Scripty/main/Scripted
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yit1Yit/Scripty/main/Scripted", true))()
